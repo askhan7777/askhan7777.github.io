@@ -1,8 +1,271 @@
-<html>
-  <head>
-    <title>Abid khan portfolio</title>
-  </head>
-  <body>
-    <p>Look at my portfolio</p>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muhammad Abid — Senior Frontend Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div class="cursor" id="cursor"></div>
+    <div class="grain"></div>
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- NAV -->
+    <nav>
+        <div class="logo">Muhammad<span> Abid</span></div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="menu-btn" id="menuBtn">☰</button>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero" id="home">
+        <div class="hero-tag"><span class="dot"></span> Available for opportunities</div>
+        <h1>Building <span>3D-grade</span><br>frontend experiences.</h1>
+        <div class="typed-wrap"><span id="typed"></span><span class="cursor-blink">&nbsp;</span></div>
+        <p class="lead">
+            Senior Frontend Engineer with 6+ years architecting high-performance, scalable UIs for
+            enterprise SaaS and Business Intelligence platforms — across React, Next.js, and Angular.
+        </p>
+        <div class="btn-row">
+            <a href="#experience" class="btn btn-primary">View My Work →</a>
+            <a href="mailto:kabid9876@gmail.com" class="btn btn-ghost">Let's Talk</a>
+        </div>
+
+        <div class="stats reveal">
+            <div class="stat"><b>6+</b><small>Years Experience</small></div>
+            <div class="stat"><b>40%</b><small>Faster Data Retrieval</small></div>
+            <div class="stat"><b>25%</b><small>Dev Time Reduced</small></div>
+            <div class="stat"><b>100%</b><small>Security Compliance</small></div>
+        </div>
+    </header>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <h2 class="section-title reveal">Technical <span>Arsenal</span></h2>
+        <p class="section-sub reveal">A hybrid toolkit spanning modern JavaScript ecosystems and enterprise frameworks —
+            engineered for scale, security, and speed.</p>
+
+        <div class="grid">
+            <div class="card tilt reveal">
+                <h3><span class="ico">⚛️</span> Frontend Frameworks</h3>
+                <div class="tags">
+                    <span class="tag">React.js</span><span class="tag">Next.js</span>
+                    <span class="tag alt">Angular</span><span class="tag alt">AngularJS</span>
+                    <span class="tag alt2">TypeScript</span><span class="tag alt2">JavaScript ES6+</span>
+                </div>
+            </div>
+            <div class="card tilt reveal">
+                <h3><span class="ico">🎨</span> UI / UX & Styling</h3>
+                <div class="tags">
+                    <span class="tag">Tailwind CSS</span><span class="tag">Material-UI</span>
+                    <span class="tag alt">shadcn/ui</span><span class="tag alt">Responsive Design</span>
+                    <span class="tag alt2">WCAG Accessibility</span>
+                </div>
+            </div>
+            <div class="card tilt reveal">
+                <h3><span class="ico">🔌</span> Backend & APIs</h3>
+                <div class="tags">
+                    <span class="tag">Node.js</span><span class="tag">REST APIs</span>
+                    <span class="tag alt">GraphQL</span><span class="tag alt">Socket.IO</span>
+                    <span class="tag alt2">JSON / XML</span>
+                </div>
+            </div>
+            <div class="card tilt reveal">
+                <h3><span class="ico">🗄️</span> Databases</h3>
+                <div class="tags">
+                    <span class="tag">MongoDB</span><span class="tag">PostgreSQL</span><span class="tag">MySQL</span>
+                </div>
+            </div>
+            <div class="card tilt reveal">
+                <h3><span class="ico">⚙️</span> Tools & DevOps</h3>
+                <div class="tags">
+                    <span class="tag">Git</span><span class="tag">Docker</span>
+                    <span class="tag alt">Azure</span><span class="tag alt">CI/CD</span>
+                    <span class="tag alt2">Webpack</span><span class="tag alt2">Vite</span>
+                    <span class="tag">Jira / Agile</span>
+                </div>
+            </div>
+            <div class="card tilt reveal">
+                <h3><span class="ico">🏢</span> Domain Expertise</h3>
+                <div class="tags">
+                    <span class="tag">Enterprise SaaS</span><span class="tag alt">Business Intelligence</span>
+                    <span class="tag alt2">SAP Analytics Cloud</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid" style="margin-top:40px">
+            <div class="card reveal">
+                <h3><span class="ico">📊</span> Core Proficiency</h3>
+                <div class="bar-wrap">
+                    <div class="bar-label"><span>React / Next.js</span><span>95%</span></div>
+                    <div class="bar"><i data-w="95"></i></div>
+                </div>
+                <div class="bar-wrap">
+                    <div class="bar-label"><span>TypeScript / JavaScript</span><span>93%</span></div>
+                    <div class="bar"><i data-w="93"></i></div>
+                </div>
+                <div class="bar-wrap">
+                    <div class="bar-label"><span>Angular / AngularJS</span><span>88%</span></div>
+                    <div class="bar"><i data-w="88"></i></div>
+                </div>
+                <div class="bar-wrap">
+                    <div class="bar-label"><span>UI/UX & Accessibility</span><span>90%</span></div>
+                    <div class="bar"><i data-w="90"></i></div>
+                </div>
+                <div class="bar-wrap">
+                    <div class="bar-label"><span>Node.js / APIs</span><span>85%</span></div>
+                    <div class="bar"><i data-w="85"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+        <h2 class="section-title reveal">Professional <span>Journey</span></h2>
+        <p class="section-sub reveal">Six years of shipping enterprise-grade interfaces and leading legacy-to-modern
+            migrations.</p>
+
+        <div class="timeline">
+            <div class="job reveal">
+                <div class="job-head">
+                    <div>
+                        <h3>Associate Principal Software Engineer</h3>
+                        <div class="company">TEO International — Islamabad, Pakistan</div>
+                    </div>
+                    <span class="period">Feb 2024 – Present</span>
+                </div>
+                <ul>
+                    <li>Spearhead enterprise-scale SaaS planning modules with a hybrid React, Next.js & Angular stack,
+                        ensuring modern–legacy interoperability.</li>
+                    <li>Architect reusable TypeScript + Tailwind + shadcn/ui components, cutting frontend dev time 25%.
+                    </li>
+                    <li>Optimized real-time messaging & AI-assisted BI features via complex REST APIs, improving
+                        retrieval speed 40%.</li>
+                    <li>Enforced CSP configuration & secure session management for 100% data-protection compliance.</li>
+                    <li>Mentor junior developers and run rigorous code reviews across React & AngularJS codebases.</li>
+                </ul>
+            </div>
+
+            <div class="job reveal">
+                <div class="job-head">
+                    <div>
+                        <h3>Software Engineer</h3>
+                        <div class="company">Pixako Technologies — Islamabad, Pakistan</div>
+                    </div>
+                    <span class="period">Jul 2022 – Jan 2024</span>
+                </div>
+                <ul>
+                    <li>Migrated a legacy PHP production SaaS for US/EU clients to React, Node.js & GraphQL — 30% faster
+                        load speeds.</li>
+                    <li>Engineered responsive, accessible interfaces per strict UI/UX design systems and OOP standards.
+                    </li>
+                    <li>Optimized backend API integrations & state management for data-heavy BI dashboards.</li>
+                    <li>Documented the full technology transition for maintainability and global-team onboarding.</li>
+                </ul>
+            </div>
+
+            <div class="job reveal">
+                <div class="job-head">
+                    <div>
+                        <h3>Web Developer</h3>
+                        <div class="company">Ripton Solutions — Remote, United States</div>
+                    </div>
+                    <span class="period">Jun 2021 – Jul 2022</span>
+                </div>
+                <ul>
+                    <li>Built and maintained an HR management platform for a US client with BI attendance & secure
+                        document workflows.</li>
+                    <li>Automated document generation via TCPDF and structured salary data in XML/JSON — 50% less manual
+                        processing.</li>
+                    <li>Optimized full-stack performance (PHP, MySQL, JavaScript) for high availability.</li>
+                </ul>
+            </div>
+
+            <div class="job reveal">
+                <div class="job-head">
+                    <div>
+                        <h3>Web Programmer</h3>
+                        <div class="company">Veevotech — Peshawar, Pakistan</div>
+                    </div>
+                    <span class="period">Jan 2020 – Jun 2021</span>
+                </div>
+                <ul>
+                    <li>Developed REST APIs and backend services with Node.js & MongoDB for real-time, data-intensive
+                        apps.</li>
+                    <li>Optimized real-time communication with Socket.IO for thousands of concurrent users.</li>
+                    <li>Built a scalable Firebase push-notification service integrated with mobile & web workflows.</li>
+                </ul>
+            </div>
+
+            <div class="job reveal">
+                <div class="job-head">
+                    <div>
+                        <h3>Programmer</h3>
+                        <div class="company">Logics-Builder — Peshawar, Pakistan</div>
+                    </div>
+                    <span class="period">Jan 2018 – Jan 2020</span>
+                </div>
+                <ul>
+                    <li>Built business-critical management systems & e-commerce apps with PHP, CakePHP, and Java EE.
+                    </li>
+                    <li>Implemented automated data processing & document generation with VBA and SQL for international
+                        clients.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card reveal" style="margin-top:30px">
+            <h3><span class="ico">🎓</span> Education</h3>
+            <p style="color:var(--muted);font-size:.92rem">
+                <strong style="color:var(--txt)">B.S. in Information Technology</strong> — The University of
+                Agriculture, Peshawar, Pakistan
+                <br><span style="font-size:.8rem">Jan 2013 – Jan 2017</span>
+            </p>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="contact-box reveal">
+            <h2>Let's Build Something <span
+                    style="background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent">Exceptional</span>
+            </h2>
+            <p>Open to senior frontend roles, enterprise SaaS collaborations, and modern framework migrations. Let's
+                talk.</p>
+            <div class="btn-row" style="justify-content:center">
+                <a href="mailto:kabid9876@gmail.com" class="btn btn-primary">✉ kabid9876@gmail.com</a>
+                <a href="https://linkedin.com/in/muhammad-abid-khan" target="_blank" rel="noopener"
+                    class="btn btn-ghost">LinkedIn ↗</a>
+            </div>
+            <div class="socials">
+                <a href="mailto:kabid9876@gmail.com">Email</a>
+                <a href="https://linkedin.com/in/muhammad-abid-khan" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="#">Islamabad, Pakistan</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>© 2026 Muhammad Abid — Senior Frontend/Fullstack Engineer.</footer>
+
+    <!-- THREE.js from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
 </html>
